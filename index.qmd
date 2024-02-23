@@ -1,0 +1,66 @@
+---
+title: "Dictionary of Rutul"
+format: 
+  html:
+    page-layout: full
+editor: source
+css: styles.css
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| include: false
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text. 
+
+Please refer to the dictionary as follows:
+
+```{r}
+library(RefManageR)
+BibOptions(check.entries = FALSE, style = 'text', bib.style = 'authoryear')
+article_citation <- BibEntry(bibtype = 'misc', 
+ key='magomedgadzhieva2023',
+ title='Dictionary of Tukita (v2.0.0)',
+ author='Patimat Magomedgazhieva and Michael Daniel',
+ year='2023',
+ publisher='Linguistic Convergence Laboratory, NRU HSE',
+ address='Moscow',
+ url='http://lingconlab.ru/TukitaDict/',
+ doi='10.5281/zenodo.7803955')
+```
+
+::: {.panel-tabset}
+
+### Plain text
+```{r, results = 'asis'}
+print(article_citation, .opts = list(style = 'text'))
+```
+
+### BibTeX
+
+```{r}
+print(article_citation, .opts = list(style = 'Bibtex'))
+```
+
+:::
+
+```{r}
+#| echo: false
+#| warning: false
+
+library(tidyverse)
+library(DT)
+library(glue)
+
+read_csv("C:/Users/Kesha/dev/rutul/data/RUTUL-all.csv", show_col_types = FALSE) %>%
+  mutate(href = glue('<a href="words/{lexeme_id}">{glossing_label}</a>')) %>% 
+  select(href, meaning_1_rus, meaning_1, orthography, lemma, pos) %>% 
+  datatable(filter = 'top', escape = FALSE, rownames = FALSE,
+            colnames = c("", "Russian", "English", "orthography", "lemma", "pos"),
+            options = list(pageLength = 10, dom = 'top', 
+                           columnDefs = list(
+                             list(orderable = FALSE, className = 'details-control', targets = 0))))
+```
