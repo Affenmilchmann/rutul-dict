@@ -4,6 +4,7 @@ from jinja2 import (Environment,
 from pathlib import Path
 from tqdm import tqdm
 import csv
+from pprint import pprint
 
 def generate_html(data: dict, 
                   template: Template, 
@@ -17,6 +18,19 @@ def generate_html(data: dict,
     """
     with open(out_file, 'w') as f:
         f.write(template.render(data=data))
+
+def merge_meanings(data: dict) -> None:
+    data['meanings'] = []
+    for i in range(1, 5):
+        data['meanings'].append({
+            'meaning': data[f'meaning_{i}'],
+            'meaning_rus': data[f'meaning_{i}_rus'],
+            'example': data[f'example_{i}'],
+            'example_rus': data[f'example_{i}_rus'],
+            'diathesis': data[f'diathesis_{i}']
+        })
+        del data[f'meaning_{i}'], data[f'meaning_{i}_rus'], \
+            data[f'example_{i}'], data[f'example_{i}_rus'], data[f'diathesis_{i}']
 
 def main():
     template_file = 'word.html'
@@ -35,6 +49,8 @@ def main():
         coll_names = next(reader)
         for row in tqdm(reader):
             data = {k:v for k, v in zip(coll_names, row)}
+            merge_meanings(data)
+            pprint(data)
             generate_html(
                 data=data,
                 template=template,
