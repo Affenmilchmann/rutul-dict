@@ -55,8 +55,8 @@ library(tidyverse)
 library(DT)
 library(glue)
 
-read_csv("C:/Users/Kesha/dev/rutul/data/RUTUL-all.csv", show_col_types = FALSE) %>%
-  mutate(href = glue('<a href="words/{lexeme_id}">{glossing_label}</a>')) %>% 
+read_csv("./data/RUTUL-all.csv", show_col_types = FALSE) %>%
+  mutate(href = glue('<a href="words/{lexeme_id}.html">{glossing_label}</a>')) %>% 
   select(href, meaning_1_rus, meaning_1, orthography, lemma, pos) %>% 
   datatable(filter = 'top', escape = FALSE, rownames = FALSE,
             colnames = c("", "Russian", "English", "orthography", "lemma", "pos"),
