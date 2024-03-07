@@ -32,6 +32,16 @@ def merge_meanings(data: dict) -> None:
         del data[f'meaning_{i}'], data[f'meaning_{i}_rus'], \
             data[f'example_{i}'], data[f'example_{i}_rus'], data[f'diathesis_{i}']
 
+def split_examples(data: dict) -> None:
+    for meaning in data['meanings']:
+        examples = meaning['example'].split(';')
+        examples = [x.strip() for x in examples]
+        examples_rus = meaning['example_rus'].split(';')
+        examples_rus = [x.strip() for x in examples_rus]
+        del meaning['example'], meaning['example_rus']
+        meaning['examples'] = [{'original': orig, 'rus': rus}
+                               for orig, rus in zip(examples, examples_rus)]
+
 def main():
     template_file = 'word.html'
     data_file = 'data/RUTUL-all.csv'
@@ -50,6 +60,7 @@ def main():
         for row in tqdm(reader):
             data = {k:v for k, v in zip(coll_names, row)}
             merge_meanings(data)
+            split_examples(data)
             pprint(data)
             generate_html(
                 data=data,

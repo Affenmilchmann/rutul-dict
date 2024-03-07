@@ -25,16 +25,20 @@
         <!-- PAGE BODY -->
         <div class="container-sm pt-3">
             <p class="h3">{{ data['lemma'] }}</p>
-            <p>{{ data['orthography'] }} <b>{{ data['pos'] }}</b></p>
-            <p class="h5">Значения</p>
+            <p>Orthography: {{ data['orthography'] }}<br>
+            <b>{{ data['pos'] }}</b></p>
+            <p class="h5">Meanings</p>
             <ol class="list-group list-group-numbered">
             {% for meaning in data['meanings'] -%}
                 {%+ if meaning['meaning'] != '' %}
                 <li class="list-group-item">
                     {{ meaning['meaning'] }} <br> {{ meaning['meaning_rus'] }}
                     <br>
-                    "{{ meaning['example'] }}" <br>
-                    <it>{{ meaning['example_rus'] }}</it>
+                    <ul>
+                    {%- for example in meaning['examples'] %}
+                        <li><i>{{ example['original'] }}</i> — ‘{{ example['rus'] }}’</li>
+                    {% endfor -%}
+                    </ul>
                 </li>
                 {% endif %}
             {%- endfor %}
