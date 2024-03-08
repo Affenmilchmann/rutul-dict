@@ -8,7 +8,8 @@ from pprint import pprint
 
 def generate_html(data: dict, 
                   template: Template, 
-                  out_file: Path) -> None:
+                  out_file: Path,
+                  **kwargs) -> None:
     """generates a single html file and saves it at `out_file`
 
     Args:
@@ -17,7 +18,8 @@ def generate_html(data: dict,
         out_file (Path): out file name
     """
     with open(out_file, 'w') as f:
-        f.write(template.render(data=data))
+        f.write(template.render(data=data,
+                                **kwargs))
 
 def merge_meanings(data: dict) -> None:
     data['meanings'] = []
@@ -41,11 +43,29 @@ def split_examples(data: dict) -> None:
         del meaning['example'], meaning['example_rus']
         meaning['examples'] = [{'original': orig, 'rus': rus}
                                for orig, rus in zip(examples, examples_rus)]
+        
+def load_inflection(*files) -> dict:
+    inflection_data = {}
+    for f_name in files:
+        with open(f_name, 'r', encoding='utf-8') as f:
+            reader = csv.reader(f)
+            col_names = next(reader)
+            for row in reader:
+                data = {k:v for k, v in zip(col_names, row)}
+                lex_id = data['lexeme_id']
+                del data['lexeme_id']
+                inflection_data[lex_id] = data
+    return inflection_data
 
 def main():
     template_file = 'word.html'
     data_file = 'data/RUTUL-all.csv'
+    infl_files = ['data/RUTUL-infl_adj.csv',
+                  'data/RUTUL-infl_noun.csv',
+                  'data/RUTUL-infl_verb.csv']
     out_dir = 'words'
+    complex_pos_list = ['v.compl', 'n.compl']
+    complex_note = 'This is a complex verb consisting of the words:'
 
     root = Path(__file__).parent.absolute()
     templates_dir = root.joinpath('templates')
@@ -54,18 +74,26 @@ def main():
     env = Environment(loader=FileSystemLoader(templates_dir))
     template = env.get_template(template_file)
 
+    inflection_data = load_inflection(*infl_files)
+
     with open(data_file) as f:
         reader = csv.reader(f)
-        coll_names = next(reader)
+        col_names = next(reader)
         for row in tqdm(reader):
-            data = {k:v for k, v in zip(coll_names, row)}
+            data = {k:v for k, v in zip(col_names, row)}
             merge_meanings(data)
             split_examples(data)
+            if data['lexeme_id'] in inflection_data:
+                data['inflection_data'] = inflection_data[data['lexeme_id']]
+            else: 
+                data['inflection_data'] = None
             pprint(data)
             generate_html(
                 data=data,
                 template=template,
-                out_file=out_dir.joinpath(f"{data['lexeme_id']}.html")
+                out_file=out_dir.joinpath(f"{data['lexeme_id']}.html"),
+                complex_pos_list=complex_pos_list,
+                complex_note=complex_note,
             )
 
 if __name__ == '__main__':
