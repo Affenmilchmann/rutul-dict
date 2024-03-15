@@ -55,11 +55,14 @@ library(tidyverse)
 library(DT)
 library(glue)
 
-read_csv("./data/RUTUL-all.csv", show_col_types = FALSE) %>%
-  mutate(href = glue('<a href="words/{lexeme_id}.html">{glossing_label}</a>')) %>% 
-  select(href, meaning_1_rus, meaning_1, orthography, lemma, pos) %>% 
+data<-read_tsv("./data/rutul_dict.tsv", show_col_types = FALSE)
+names(data)<-make.names(names(data))
+
+mutate(data, 
+       href = glue('<a href="words/{gsub(", ","-",Glossing.label)}.html">{Glossing.label}</a>')) %>% 
+  select(href, meaning_1_rus, meaning_1, Orthography, Lexical.entry, Part.of.Speech) %>% 
   datatable(filter = 'top', escape = FALSE, rownames = FALSE,
-            colnames = c("", "Russian", "English", "orthography", "lemma", "pos"),
+            colnames = c("", "Russian", "English", "Orthography", "lemma", "pos"),
             options = list(pageLength = 10, dom = 'top', 
                            columnDefs = list(
                              list(orderable = FALSE, className = 'details-control', targets = 0))))
