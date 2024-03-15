@@ -4,6 +4,7 @@ from jinja2 import (Environment,
 from pathlib import Path
 from tqdm import tqdm
 import csv
+import re
 from pprint import pprint
 
 def generate_html(data: dict, 
@@ -36,9 +37,9 @@ def merge_meanings(data: dict) -> None:
 
 def split_examples(data: dict) -> None:
     for meaning in data['meanings']:
-        examples = meaning['example'].split(';')
+        examples = meaning['example'].split(' ; ')
         examples = [x.strip() for x in examples]
-        examples_rus = meaning['example_rus'].split(';')
+        examples_rus = meaning['example_rus'].split(' ; ')
         examples_rus = [x.strip() for x in examples_rus]
         del meaning['example'], meaning['example_rus']
         meaning['examples'] = [{'original': orig, 'rus': rus}
@@ -48,7 +49,7 @@ def load_inflection(*files) -> dict:
     inflection_data = {}
     for f_name in files:
         with open(f_name, 'r', encoding='utf-8') as f:
-            reader = csv.reader(f)
+            reader = csv.reader(f, delimiter='\t')
             col_names = next(reader)
             for row in reader:
                 data = {k:v for k, v in zip(col_names, row)}
@@ -57,14 +58,28 @@ def load_inflection(*files) -> dict:
                 inflection_data[lex_id] = data
     return inflection_data
 
+def insert_inflection(data: dict, inflection_data: dict) -> None:
+    if data['lexeme_id'] in inflection_data:
+        data['inflection_data'] = inflection_data[data['lexeme_id']]
+    else: 
+        data['inflection_data'] = None
+
+glossing_labels = set()
+def check_glossing_label(label: str) -> None:
+    if not re.match(r'^[a-z]+(?:, )?[a-z]*$', label):
+        raise Exception(f"Invalid format of glossing label: '{label}'")
+    if label in glossing_labels:
+        raise Exception(f"Not unique glossing label: '{label}'. There is already an entry with such label")
+    glossing_labels.add(label)
+
 def main():
     template_file = 'word.html'
-    data_file = 'data/RUTUL-all.csv'
-    infl_files = ['data/RUTUL-infl_adj.csv',
-                  'data/RUTUL-infl_noun.csv',
-                  'data/RUTUL-infl_verb.csv']
+    data_file = 'data/rutul_dict.tsv'
+    infl_files = ['data/infl_adj.tsv',
+                  'data/infl_noun.tsv',
+                  'data/infl_verb.tsv']
     out_dir = 'words'
-    complex_pos_list = ['v.compl', 'n.compl']
+    complex_pos_list = ['complex verb', 'complex noun']
     complex_note = 'This is a complex verb consisting of the words:'
 
     root = Path(__file__).parent.absolute()
@@ -77,21 +92,23 @@ def main():
     inflection_data = load_inflection(*infl_files)
 
     with open(data_file) as f:
-        reader = csv.reader(f)
+        reader = csv.reader(f, delimiter='\t')
         col_names = next(reader)
         for row in tqdm(reader):
             data = {k:v for k, v in zip(col_names, row)}
             merge_meanings(data)
             split_examples(data)
-            if data['lexeme_id'] in inflection_data:
-                data['inflection_data'] = inflection_data[data['lexeme_id']]
-            else: 
-                data['inflection_data'] = None
+            insert_inflection(data, inflection_data)
             pprint(data)
+            check_glossing_label(data['Glossing label'])
+
+            out_file = out_dir.joinpath("{name}.html".format(
+                name=data['Glossing label'].replace(', ', '-')
+            ))
             generate_html(
                 data=data,
                 template=template,
-                out_file=out_dir.joinpath(f"{data['lexeme_id']}.html"),
+                out_file=out_file,
                 complex_pos_list=complex_pos_list,
                 complex_note=complex_note,
             )

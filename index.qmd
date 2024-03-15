@@ -1,5 +1,5 @@
 ---
-title: "Dictionary of Rutul"
+title: "Dictionary of Kina Rutul"
 format: 
   html:
     page-layout: full
