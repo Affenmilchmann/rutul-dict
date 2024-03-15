@@ -13,7 +13,10 @@
                 .small-container {
                     width: 100%;
                 }
-            } 
+            }
+            .dict-table td {
+                padding-left: 10;
+            }
         </style>
     </head>
     <body>
@@ -38,15 +41,23 @@
             <div class="small-container">
                 <p class="h3">{{ data['Lexical entry'] }}</p>
                 <p>
-                    Orthography: {{ data['Orthography'] }}
-                    <br>
                     <b>{{ data['Part of Speech'] }}</b>
                     <br>
-                    {%+ if (data['Part of Speech'] in complex_pos_list) %}
-                        {{ complex_note }} 
+                    {%+ if (data['Part of Speech'] in complex_pos) %}
+                        {{ complex_pos[data['Part of Speech']] }} 
                         {%if data['main_word_id']%}<a href="{{data['main_word_id']}}.html">{{data['main_word']}}</a>{%else%}{{data['main_word']}}{%endif%}, 
                         {%if data['2nd_word_id']%}<a href="{{data['2nd_word_id']}}.html">{{data['2nd_word']}}</a>{%else%}{{data['2nd_word']}}{%endif%}
                     {% endif %}
+                    <table class="dict-table" style="margin-top: 10;">
+                        <tr>
+                            <th>Orthography:</th>
+                            <td>{{ data['Orthography'] }}</td>
+                        </tr>
+                        <tr>
+                            <th>Glossing label:</th>
+                            <td>{{ data['Glossing label'] }}</td>
+                        </tr>
+                    </table>
                 </p>
                 <p class="h5">Meanings</p>
                 <ol class="list-group list-group-numbered">

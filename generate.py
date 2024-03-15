@@ -79,8 +79,10 @@ def main():
                   'data/infl_noun.tsv',
                   'data/infl_verb.tsv']
     out_dir = 'words'
-    complex_pos_list = ['complex verb', 'complex noun']
-    complex_note = 'This is a complex verb consisting of the words:'
+    complex_pos = {
+        f'complex {pos}': f'This is a complex {pos} consisting of the words:'
+        for pos in ['verb', 'noun']
+    }
 
     root = Path(__file__).parent.absolute()
     templates_dir = root.joinpath('templates')
@@ -109,8 +111,7 @@ def main():
                 data=data,
                 template=template,
                 out_file=out_file,
-                complex_pos_list=complex_pos_list,
-                complex_note=complex_note,
+                complex_pos=complex_pos
             )
 
 if __name__ == '__main__':
