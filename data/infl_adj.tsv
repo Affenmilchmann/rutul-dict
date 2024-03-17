@@ -1,2 +1,122 @@
-lexeme_id	Orthography	Lexical entry	Glossing Label	Co-verbal form	Adverbial form
-a1	гъигъды	ʁiʁdɨ	closed	ʁiʁe ~ ʁiʁ	ʁiʁena
+lexeme_id	Orthography	Lexical entry	Glossing label	Coverbal form	Adverbial form
+a1		ačɨ́χdɨ	open.adj	ačɨχ	ačɨχana
+a2		ajbaǯárdɨ 	unattractive	ajbaǯar	ajbaǯarana
+a3		alčáχdɨ	low	alčaχ	alčaχana
+a4		áˤqʼurdɨ	wide	aˁqʼura	aˁqʼurana
+a5		aˤǯízdɨ	slim	aˤǯiz	aˤǯizana
+a6		bahád	expensive	baha	bahana
+a7		balád	much.adj	bala	balana
+a8		bardɨ	blunt	bara	barana
+a9		batʼrad ~ bɨtʼrad	beautiful1	batʼrana	batʼrana
+a10		bikʼérdɨ	hot	bikʼera	bikʼerana
+a11		bɨ́ˁrqʼɨd	blind	bɨˁrqʼa	bɨˁrqʼana
+a12		bíšdɨ	deaf	biši	bišina
+a13		čapáˁldɨ	dirty	čapaˁl	čapaˁlana
+a14		čatɨ́ndɨ	difficult	čatɨn	čatɨnana
+a15		cʼɨ́ddɨ	clear	cʼɨdda	cʼɨddana
+a16		čʼidkʼɨd	hard	NO FORM	NO FORM
+a17		cʼindɨ	new	cʼina	cʼinana
+a18		čʼirčʼímdɨ	sour	čʼirčʼima	čʼirčʼimana
+a19		čʼirid	rough	čʼiri	čʼirina
+a20		čʼiχíd	large	čʼiχi	čʼiχina
+a21		čudijed	yellow	čudije	čudijena
+a22		daráqʼdɨ	orange.adj	daraqʼa	daraqʼana
+a23		delid	crazy1	deli	NO FORM
+a24		derindɨ	deep	derin	derinena
+a25		dinǯdɨ	quiet	dinǯ	dinǯena
+a26		dɨqʼˁíldɨ	bitter	dɨqʼˁile	dɨqʼˁilena
+a27		dirid	fast	diri	dirina
+a28		dǘzdɨ	straight	düz	düzena
+a29		düzémdɨ	flat	düzem	düzemna ~ düzemena 
+a30		ekéd	big	eke	ekéna
+a31		eweldɨ	ancient1	NO DATA	NO FORM
+a32		ɢajnérdɨ	boiled	ɢajner	ɢajnérana
+a33		ɢalíndɨ	thick2	ɢalina	ɢalinana
+a34		gaˁšdɨ	hungry	gaˁše	gaˁšena
+a35		géddɨ	thin1	gedda	geddana
+a36		ɢɨˁbdɨ	grey	ɢɨˁba	ɢɨˁbana
+a37		ɣɨrɣɨ́mdɨ	spicy	ɣɨrɣɨma	ɣɨrɣɨmana
+a38		ɢaˤrkid	warm	NO FORM	ɢaˁrkina
+a39		ɢurúd	dry.adj	ɢurú	ɢurúna
+a40		guǯlid	strong1	guǯli	guǯlina
+a41		harčéd	right	NO FORM	NO FORM
+a42		hazɨ́rdɨ	ready	hazɨr	hazɨrana
+a43		hɨχdɨ	good	hɨχa	hɨχana
+a44		íddɨ	sweet	idda	íddana
+a45		irdɨ	red	ira	irana
+a46		isáldɨ	tight	isala	isalana
+a47		íxad	late	ixa	NO FORM
+a48		jawášdɨ	slow	jawaš	jawašena
+a49		jɨ́qʼˁlekdɨ	second	NO DATA	NO FORM
+a50		jisdɨ	old1	jisa	NO FORM
+a51		juˁqʼdɨ	heavy	juˁqʼa	juˁqʼana
+a52		kamdɨ	lacking	kam	kamana
+a53		katɨχdɨ	left	NO FORM	NO FORM
+a54		kʼaʔdɨ ~ kʼɨʔdɨ	small	kʼaʔa	kʼaʔana
+a55		kʼɨšdɨ	brown	kʼɨše	kʼɨšena
+a56		kʼočʼdɨ	ugly	kʼočʼe	kʼočʼena
+a57		kühned	ancient2	NO DATA	NO DATA
+a58		kukdɨ	well_fed	kuk	kukana
+a59		laːzimdɨ	necessary	laːzim	laːzimana
+a60		laldɨ	mute	lal	lalna
+a61		lɨˁχdɨ	black	lɨˁχa	lɨˁχana
+a62		mɨčʼaqdɨ	dark	mɨčʼaqa	mɨčʼaqana
+a63		mikʼʷdɨ	young1	mikʼʷa	mikʼʷana 
+a64		mɨqʼdɨ	cold	mɨqʼa	mɨqʼana
+a65		načaʁ	ill	načaʁ	načaʁana
+a66		naˁhaˁqʼdɨ	naughty	naˁhaˁqʼ	naˁhaˁqʼana
+a67		nazdɨ	smooth	naza	nazana
+a68		nesdɨ	prior	NO FORM	NO FORM
+a69		peʔdɨ 	little	petʼ	petʼana
+a70		pijandɨ	drunk	pijan	pijanana
+a71		pisdɨ	bad	pisna ~ pis	pisana
+a72		qʼaˤrdɨ	empty	qʼaˤra	qʼaˤrana
+a73		qʼaˤsdɨ	old2	qʼaˁsa	qʼaˁsana
+a74		qʼɨcʼdɨ	narrow	qʼɨcʼa	qʼɨcʼana
+a75		qʼɨˁčid	tired	qʼɨˁči	qʼɨˁčina
+a76		qʼɨldɨ	thin2	qʼɨla	qʼɨlana
+a77		qʼˁildɨ	salty1	qʼˁile	NO FORM
+a78		qʼɨˁrčʼid	motley	qʼɨˁrčʼi	qʼɨˁrčʼina
+a79		qʼɨxdɨ ~ qʼʷɨxdɨ ~ qʼojxdɨ	senior	qʼɨxe	qʼɨxena
+a80		qʼuˁluˁqdɨ	salty2	qʼuˁluˁqa	qʼuˁluˁqana
+a81		qʼuwalɨ(d)	strong2	qʼuwalɨ	NO FORM
+a82		račdɨ	sharp	rače	račena
+a83		ʁacʼuldɨ	naked	ʁacʼul	ʁacʼulana
+a84		ʁaˁndɨ	fertile	ʁaˁna	ʁaˁnana
+a85		raːzid	content	razi	razina
+a86		ʁɨˁdildɨ	soft	ʁɨˁdile	ʁɨˁdilena
+a87		ʁiʁdɨ	solid	ʁiʁe ~ ʁiʁ	ʁiʁena
+a88		ʁɨˁrdɨ	ginger.adj	ʁɨˁra	ʁɨˁrana
+a89		rɨšdɨ	dense	rɨše	rɨšena
+a90		saːbɨrdɨ	calm1	saːbɨr	saːbɨrana
+a91		saːkitdɨ	calm2	saːkit	saːkitana
+a92		salamatdɨ	reliable	NO FORM	salamatana
+a93		saʁdɨ	healthy	saʁ	saʁana
+a94		sɨldɨ	light	sɨla	sɨlana
+a95		šildɨ	green	šile	šilena
+a96		tamɨ́zdɨ	clean	tamɨz	tamɨzana
+a97		táncʼɨd	crazy2	tancʼa	tancʼana
+a98		tekdɨ	single	tek	tekana
+a99		huqʼlʲádɨ ~ huqʼulʲádɨ	former	NO DATA	NO DATA
+a100		uxtándɨ ~ uftándɨ	beautiful2	uxtanna	uxtanna
+a101		užúzdɨ	cheap	užuz	užuzana
+a102		xɨlɨ́ndɨ	dark_blue	xɨlɨna	xɨlɨnana
+a103		ximíldɨ	liquid.adj	ximile	ximilena
+a104		xulíxʲdɨ	thick1	xulixe	xulixena
+a105		ǯágʷardɨ	white	ǯagʷara	ǯagʷarana
+a106		ǯikʲdɨ	short	ǯike	ǯikena
+a107		ǯülʲdɨ	petty	ǯüle	ǯülena
+a108		χárčʼed	blue	χarčʼe	χarčʼena
+a109		χuˁlʲáˤχdɨ	tall	χuˁlʲaˁχa	χuˁlʲaˁχana
+a110		aˁqʼallɨ́(d)	clever	aˁqʼallɨ	aˁqʼallɨna
+a111		aˁqʼalsɨ́z(dɨ)	stupid	NO DATA	aˁqʼalsɨzna
+a112		taχsirkár(dɨ)	guilty	NO DATA	NO DATA
+a113		ǯehíl	young2	ǯehil	ǯehilena
+a114		kasíb	poor	kasib	kasibana
+a115		qʼuwasɨ́z(dɨ)	weak	NO DATA	qʼuwasɨzna
+a116		tambál(dɨ)	lazy	tambal	tambalana
+a117		warlɨ́(d)	rich1	warlɨ	warlɨna
+a118		maddɨ	other	NO DATA	NO DATA
+a119		lejíχdɨ	suitable	lejiχ	NO FORM
+a120		katχudá	rich2	NO DATA	NO DATA
+a121		jawád	idle	jawa	jawana

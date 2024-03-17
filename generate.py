@@ -2,6 +2,7 @@ from pprint import pprint
 from pathlib import Path
 import csv
 import re
+import os
 
 from jinja2 import (Environment,
                     FileSystemLoader,
@@ -138,7 +139,7 @@ def insert_inflection(data: dict, inflection_data: dict) -> None:
         inflection_data (dict): all words inflection data
     """
     blacklist = ['Orthography',
-                 'Glossing Label',
+                 'Glossing label',
                  'Lexical entry']
     if data['lexeme_id'] in inflection_data:
         data['inflection_data'] = inflection_data[data['lexeme_id']]
@@ -162,7 +163,8 @@ def check_glossing_label(label: str) -> None:
         ValueError: format is incorrect
         ValueError: label is not unique (this func met it before)
     """
-    if not re.match(r'^[a-z]+(?:, )?[a-z]*$', label):
+    chars = "[a-zA-Z0-9_\-'.]"
+    if not re.match(f'^{chars}+(?:, )?{chars}*$', label):
         raise ValueError(f"Invalid format of glossing label: '{label}'")
     if label in met_glossing_labels:
         raise ValueError(
@@ -192,6 +194,8 @@ def main():
 
     inflection_data = load_inflection(*infl_files)
     glossing_labels = load_glossing_labels(data_file)
+
+    os.system(f'rm {out_dir}/*')
 
     with open(data_file, encoding='utf-8') as f:
         reader = csv.reader(f, delimiter='\t')
