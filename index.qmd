@@ -10,10 +10,11 @@ format:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-> This is the dictionary of the Rutul language (Lezgic < East-Caucasian), spoken in the settlement of Kina (Russia, Dagestan Republic).  
->   
-> [Browse the dictionary](./dictionary.html)
+This is the dictionary of the Rutul language (Lezgic < East-Caucasian), spoken in the settlement of Kina (Russia, Dagestan Republic).  
+[Browse the dictionary](./dictionary.html)
 
+
+## How to cite
 Please refer to the dictionary as follows:
 
 ```{r}

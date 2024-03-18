@@ -14,8 +14,8 @@ editor_options:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-> To see the full page for the word click on it in the column “Glossing Label”.
-> The full page contains examples in Rutul and their translations to Russian and also some morphological information for the word.
+To see the full page for the word click on it in the column “Glossing Label”.
+The full page contains examples in Rutul and their translations to Russian and also some morphological information for the word.
 
 ```{r}
 #| echo: false
