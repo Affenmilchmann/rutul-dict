@@ -51,7 +51,7 @@ mutate(data,
                                 </ol>'))) %>%
   select(href, meanings_rus, meanings, Orthography, No.stress, Part.of.Speech) %>% 
   datatable(filter = 'top', escape = FALSE, rownames = FALSE,
-            colnames = c("Glossing Label", "Russian", "English", "Orthography", "Lemma", "pos"),
+            colnames = c("Glossing Label", "Russian", "English", "Orthography", "Lexical entry", "Part of Speech"),
             options = list(pageLength = 10, dom = 'top', 
                            columnDefs = list(
                              list(orderable = FALSE, className = 'details-control', targets = 0))))
