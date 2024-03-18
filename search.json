@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "Dictionary of Kina Rutul",
     "section": "",
-    "text": "This is the dictionary of the Rutul language (Lezgic &lt; East-Caucasian), spoken in the settlement of Kina (Russia, Dagestan Republic).\nBrowse the dictionary"
+    "text": "This is the dictionary of the Rutul language (Lezgic &lt; East-Caucasian; glottocode: rutu1240), spoken in the settlement of Kina (Russia, Dagestan Republic).\nThis dictionary was collected during the fieldwork in 2016-2023 of Linguistic convergence laboratory (HSE University). We are grateful for all the consultants who helped us in our work.\nThe dictionary contains 1256 lexical entries of different parts of speech (nouns, verbs, etc.), list of meanings collected for these entries, exemplifying sentences and also some morphological information."
   },
   {
     "objectID": "dictionary.html",
     "href": "dictionary.html",
     "title": "Dictionary of Kina Rutul",
     "section": "",
-    "text": "To see the full page for the word click on it in the column “Glossing Label”. The full page contains examples in Rutul and their translations to Russian and also some morphological information for the word."
+    "text": "You can search the information in all the columns given.\nTo see the full page for the word click on it in the column Glossing Label. It contains examples in Rutul and their translations to Russian and also some morphological information for the word (Inflection section). If the word is a complex noun, in Inflection there will be a link to the word, which is inflected in this complex noun. Same is for complex verbs.\nThe column Russian represents a list of meanings translated to Russian for each lexical entry, English does the same, but in English. Orthography shows the word written in cyrillic transcription. Part of Speech indicates the part of speech of the lexical entry, five are represented: noun, verb, adjective, complex noun and complex verb. Glossing label is shown for users that gloss the Kina Rutul texts."
   },
   {
     "objectID": "index.html#how-to-cite",
@@ -19,5 +19,26 @@
     "title": "Dictionary of Kina Rutul",
     "section": "How to cite",
     "text": "How to cite\nPlease refer to the dictionary as follows:\n\nPlain textBibTeX\n\n\nAlekseeva, A., N. Beklemishev, M. Daniel, et al. (2024). Dictionary of Kina Rutul. Moscow. https://affenmilchmann.github.io/rutul-dict/.\n\n\n\n\n@misc{alekseevaetal2024,\n  title = {Dictionary of Kina Rutul},\n  author = {A. Alekseeva and N. Beklemishev and M. Daniel and N. Dobrushina and K. Filatov and A. Ivanova and T. Maisak and I. Osorgin},\n  year = {2024},\n  publisher = {Linguistic Convergence Laboratory, HSE University},\n  address = {Moscow},\n  url = {https://affenmilchmann.github.io/rutul-dict/},\n}"
+  },
+  {
+    "objectID": "dictionary.html#how-to-use",
+    "href": "dictionary.html#how-to-use",
+    "title": "Dictionary of Kina Rutul",
+    "section": "",
+    "text": "You can search the information in all the columns given.\nTo see the full page for the word click on it in the column Glossing Label. It contains examples in Rutul and their translations to Russian and also some morphological information for the word (Inflection section). If the word is a complex noun, in Inflection there will be a link to the word, which is inflected in this complex noun. Same is for complex verbs.\nThe column Russian represents a list of meanings translated to Russian for each lexical entry, English does the same, but in English. Orthography shows the word written in cyrillic transcription. Part of Speech indicates the part of speech of the lexical entry, five are represented: noun, verb, adjective, complex noun and complex verb. Glossing label is shown for users that gloss the Kina Rutul texts."
+  },
+  {
+    "objectID": "dictionary.html#dictionary",
+    "href": "dictionary.html#dictionary",
+    "title": "Dictionary of Kina Rutul",
+    "section": "Dictionary",
+    "text": "Dictionary"
+  },
+  {
+    "objectID": "index.html#browse-the-dictionary",
+    "href": "index.html#browse-the-dictionary",
+    "title": "Dictionary of Kina Rutul",
+    "section": "Browse the dictionary",
+    "text": "Browse the dictionary"
   }
 ]
