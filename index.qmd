@@ -10,5 +10,5 @@ format:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-This is the dictionary of the Rutul language (Lezgic < East-Caucasian), spoken in the settlement of Kina (Russia, Dagestan Republic).
-To browse the dictionary go to "Dictionary" tab on the top panel.
+> This is the dictionary of the Rutul language (Lezgic < East-Caucasian), spoken in the settlement of Kina (Russia, Dagestan Republic).  
+> [Browse the dictionary](./dictionary.html)
