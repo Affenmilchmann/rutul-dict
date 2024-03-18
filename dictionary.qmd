@@ -50,9 +50,9 @@ mutate(data,
                                   <li>{meaning_3}</li>
                                   <li>{meaning_4}</li>
                                 </ol>'))) %>%
-  select(href, meanings_rus, meanings, Orthography, No.stress, Part.of.Speech) %>% 
+  select(href, No.stress, Orthography, meanings_rus, meanings, Part.of.Speech) %>% 
   datatable(filter = 'top', escape = FALSE, rownames = FALSE,
-            colnames = c("Glossing Label", "Russian", "English", "Orthography", "Lexical entry", "Part of Speech"),
+            colnames = c("Glossing Label", "Lexical entry", "Orthography", "Russian", "English", "Part of Speech"),
             options = list(pageLength = 10, dom = 'top', 
                            columnDefs = list(
                              list(orderable = FALSE, className = 'details-control', targets = 0))))
