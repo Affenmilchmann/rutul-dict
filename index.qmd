@@ -13,3 +13,30 @@ knitr::opts_chunk$set(echo = FALSE)
 > This is the dictionary of the Rutul language (Lezgic < East-Caucasian), spoken in the settlement of Kina (Russia, Dagestan Republic).  
 >   
 > [Browse the dictionary](./dictionary.html)
+
+Please refer to the dictionary as follows:
+
+```{r}
+library(RefManageR)
+BibOptions(check.entries = FALSE, style = 'text', bib.style = 'authoryear')
+article_citation <- BibEntry(bibtype = 'misc', 
+ key='alekseevaetal2024',
+ title='Dictionary of Kina Rutul',
+ author='A. Alekseeva and N. Beklemishev and M. Daniel and N. Dobrushina and K. Filatov and A. Ivanova and T. Maisak and I. Osorgin',
+ year='2024',
+ publisher='Linguistic Convergence Laboratory, HSE University',
+ address='Moscow',
+ url='https://affenmilchmann.github.io/rutul-dict/')
+```
+
+::: {.panel-tabset}
+### Plain text
+```{r, results = 'asis'}
+print(article_citation, .opts = list(style = 'text'))
+```
+### BibTeX
+
+```{r}
+print(article_citation, .opts = list(style = 'Bibtex'))
+```
+:::
