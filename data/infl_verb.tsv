@@ -1,3 +1,231 @@
-lexeme_id	Orthography	Lexical entry	Glossing Label	Perfective, Gender 3	Imperfective, Gender 3	Infinitive, Gender 3	Imperative, Gender 3	Prohibitive, Gender 3
-v1	къапхыр	ɢápχɨr	chop	ɢápχɨr	ɢawráχar	ɢápχas	ɢápχa	ɢamáwrɨχ
-v2	йиIвхыIр	jíˁwχɨˁr	hit	jíˁwχɨˁr	wɨrɨ́χaˁr	jíˁwχɨˁs	jɨ́ˁwχa ~ jɨ́ˁwχ	máˁwrɨχ
+lexeme_id	Orthography	Lexical entry	Glossing label	Perfective, Gender 3	Imperfective, Gender 3	Infinitive, Gender 3	Imperative, Gender 3	Prohibitive, Gender 3
+v1		ápcur	measure	ápcur	awrácura	apcus	apca	amawruc
+v2		ábgɨr	INSIDE-stay	ábgɨr	owɨlgara	abgas	abga	amawlɨg
+v3		ábʁur	INSIDE-shift	ábʁur	oˁwʁura	owʁus	owʁa	omowubʁ ~ omobʁ
+v4		áčʼipxɨr	PV-squeeze_in	áčʼipxɨr	ačʼwílxara	ačʼipxas	ačʼipxa	ačʼmelwix
+v5		áčʼipqɨr	PV-stuck	áčʼipqɨr	ačʼwílqara	ačʼipqas	ačʼipqa	ačʼmewliq
+v6		ápquˁr	PV-dig	ápquˁr	awráqʷaˁra	ápqʷaˁs	aˁpqʷa	amáˁwruqʷ
+v7		hawársɨr ~ hawárcɨr	PV-search_for	hawársɨr ~ hawárcɨr	hawárcara	háwarcas	háwarca	homówɨrc
+v8		aʁówʁur	PV-carve_circles	aʁówʁur	aʁábʁura	aʁówʁus	aʁówʁʷa	aʁmábʁ
+v9		awálkʼɨr	PV-be_lame	awálkʼɨr	awálkʼara	awalkʼas	awalkʼa	amawlɨkʼ
+v10		áwɨr	INSIDE-do	áwɨr	áwara	awas	awa ~ awaʔ ~ owʔa	amawaʔ
+v11		biʔir	pull	biʔir	beʔera	beʔes	beʔe	mebiʔ
+v12		wáka (IMP)	bring.IMP	NO FORM	NO FORM	NO FORM	wáka	NO FORM
+v13		čʼipxɨr	PV-attack	čʼipxɨr	čʼiwirxara	čʼiwirxas ~ čʼipxas	čʼipxa	čʼimewrɨx
+v14		c’ipq’ɨr	PV-shudder	c’ipq’ɨr	c’iwriq’ara	c’ipq’as	c’ipq’a	c’imewriqʼ
+v15		éwčʼira	PV-chew	éwčʼira	éwičʼera	ewčʼes ~ éwičʼes	éwičʼe	eméwičʼ
+v16		eʁéwčʼur	INSIDE-OUT-move	eʁéwčʼur	oˁʁówʁura ~ aˁʁábʁura	eʁewčʼus	eʁéwčʼeʔ ~ éʁwičʼ	oˤʁmóˤwuʁ ~ eʁmébčʼ
+v17		eʁípxur	INSIDE-OUT-fall	eʁípxur	eʁwípxura	eʁípxus	eʁépx	ʁimépx
+v18		eʁwíjir	INSIDE-OUT-let	eʁwíjir	aʁwɨ́χara	eʁwíjis	eʁwíja ~ егъви́й	оӀгъмовыгъ ~ агъмовыгъ
+v19		éwčʼur	INSIDE-move	éwčʼur	óˤwʁura ~ áˤbʁura ~ ébčʼura	éwčʼus	ewíčʼ	amóˤwuʁ ~ aˤmábʁ
+v20		gébgɨr	UNDER-stay	gébgɨr	gewílgar	gébgas	gébga	gemewlig
+v21		géptɨr	PV-take_pet	géptɨr	gewiltara	geptasɨ	geptaʔ	gemewlɨt ~ gemewrɨt
+v22		geʁewčʼur	UNDER-OUT-move	geʁewčʼur	geʁebčʼur	geʁewčʼus	geʁwičʼa	geʁmewričʼ ~ geʁmewručʼ
+v23		geʁipxur	UNDER-OUT-fall	geʁipxur	geʁwipxura	geʁipxusɨ	geʁipxʷa	geʁmewipxʷ
+v24		geʁiwxir	PV-be_silent	geʁiwxir	geʁiwxera	geʁiwxis	geʁiwxe	geʁmewrix
+v25		geʁɨp’ir	UNDER-OUT-pull	geʁɨp’ir	geʁʷilera	geʁip’es	geʁip’e	geʁmelwiʔ
+v26		gič’erij	fear.v	gič’erij	gič’era	NO DATA	NO DATA	NO DATA
+v27		giwčir	UNDER-hold	giwčir	gidibčira (HPL)	giwčes	giwči	gimedibč (HPL)
+v28		giwiqʼɨr	PV-understand	giwiqʼɨr	giwirqʼara	giwɨqʼas	giwɨqʼa	gimerwrɨqʼ
+v29		giwχɨˤr	UNDER-hit	giwχɨˤr	giwɨrχˁɨra	giwχˤɨs	giwχaˁ	gimawrɨˁχ
+v30		giwxir	UNDER-put	giwxir	giwilxera	giwxis	giwxʲa	gimewlixʲ
+v31		gʲaʁač’ipχɨr	PV-slide	gʲaʁač’ipχɨr	gʲaʁačʼwɨlχara	gʲaʁačʼipχas	gʲaʁač’ipχa	gʲaʁmelʲwičʼ
+v32		gʲowʁur	UNDER-shift	gʲowʁur	gʲabʁura	gʲowʁus	gʲowʁa	gʲamabʁu
+v33		gʲówɢɨr	PV-look	gʲówɢɨr	gʲowaɢara ~ gʲówɨrɢara	gʲówɢas	gʲówɢa	gʲamáwlɨɢ+ ~ gʲomówɨrɢ
+v34		ɢápχɨr	PV-chop	ɢápχɨr	ɢawráχara	ɢápχas	ɢápχa	ɢamáwrɨχ
+v35		ɢípkur	PV-knead	ɢípkur	ɢiwrǘkara	ɢípkʷas	ɢípkʷa	ɢiméwrükʷ
+v36		háptʼur	cut	háptʼur	warátʼura	hábtʼus	hábtʼʷa	mówrutʼ
+v37		hápχɨˁr	leave	hápχɨˁr	NO FORM	quˁwʁuˁs	wɨ́rɨχ	máˁwuʁ ~ móˁwuʁ
+v38		hiwígɨr	PV-make_go_out	hiwígɨr	hiwírgara	hiwígas	hiwíga	himéwrig
+v39		hɨwɨ́r	give	hɨwɨ́r	wɨ́lcʼar ~ hɨ́lcʼar ~ hɨwɨ́lcʼar = Ӏ, 4	hɨwɨ́s	wáka ~ wíjaʔ	mówlɨcʼ ~ máwlɨcʼ
+v40		húbgur	slauther	húbgur	wurúgar	húbgas	húbga	máwrug ~ mówrug
+v41		húbqʼur	crumble	húbqʼur	wurúqʼara	húbqʼas	húbqʼʷa	máwruqʼ
+v42		húpxur	burn	húpxur	wurxʷara	húpxʷas	hupxa ~ hupxʷa	mawurx ~ mawrux
+v43		ípxur	INSIDE-fall	ípxur	iwírxura	ípxus	ípxʷa	imépxʷ
+v44		ípt’ɨr	INSIDE-tie	ípt’ɨr	iwílt’ara	ípt’as	ípt’a	iméwrɨtʼ
+v45		íwxir	INSIDE-put	íwxir	iwílxera	íwxis	íwxʲa ~ íwxe	iméwlixʲ
+v46		jíbkʼur	enclose	jíbkʼur	wiríkʼʷara ~ jiwírkʼʷara	jíbkʼʷas	jibkʼʷa	méwrikʼʷ ~ méwrükʼ
+v47		jíbqʼɨr	come	jíbqʼɨr	wurúʔura	wɨ́q’as	wɨ́qʼa	máwuˁʁ
+v48		jíbʁɨr	wash	jíbʁɨr	wiríʁara	jíbʁas	jíbʁa	méwrɨʁ
+v49		jíbtʼɨr	tie	jíbtʼɨr	wirítʼara	jíbtʼas	jíbtʼa	méwitʼ
+v50		jiwígɨra ~ hiwígɨra	push	jiwígɨra ~ hiwígɨra	jiwírgara ~ hiwírgara	гьиви́гас	гьиви́га	гьме́вриг
+v51		jiwíq’ɨra ~ hiwíq’ɨra	ripen	jiwíq’ɨra ~ hiwíq’ɨra	jiwírq’ara ~ hiwírq’ara	гьиви́кьас	гьиви́кьа	гьме́врикь
+v52		jíˁwχɨˁr	hit	jíˁwχɨˁr	wɨrɨ́χaˁr	jíˁwχɨˁs	jɨ́ˁwχa ~ йы́Ӏвх	máˁwrɨχ ~ ма́врыӀх
+v53		keqléwčʼur	SURF-RE-OUT-move	keqléwčʼur	кехълебчӀура ~ кʼахълʼаӀбгъура	кехъле́вчӀус	кехъви́чӀ	кехъме́влуьчӀ
+v54		keqlíp’ir	SURF-RE-OUT-pull	keqlíp’ir	keqlíwilera	keqlíp’es	keqlíp’e	keqlemewliʔ
+v55		kewírkɨr	PV-be_late	kewírkɨr	kewirkara	kewirkas	kewirka	kemewrɨk
+v56		keʁéwčʼur	SURF-OUT-move	keʁéwčʼur	keʁébčʼura	keʁewčʼus	keʁwič’	keʁméwč’
+v57		keʁwíjir	SURF-OUT-let	keʁwíjir	kʲaʁwɨχara	keʁwijis	keʁwi	kʲaʁmowɨχ ~ kʲaʁmawɨχ
+v58		keʁípʼir	PV-choose	keʁípʼir	keʁʷilera	keʁipʼes	keʁip’e	keʁmewliʔ ~ keʁmewriʔ
+v59		keʁowčir	SURF-OUT-hold	keʁowčir	kʲɐʁʷopčira	kʲaʁowčis	kʲaʁówč	kʲaʁmówrič
+v60		kip’t’ɨr	SURF-tie	kip’t’ɨr	kiwilt’ara	kip’t’as	kip’ta	kemewlit’
+v61		kipxur	SURF-fall	kipxur	kiwipxura	kipxus	kipxʷa	kimepxʷ
+v62		ḱičibqɨr	PV-stick1	ḱičibqɨr	kičwilqara	kičibqas	kičébqa	kičméwrɨk
+v63		kíˁwɨˁχɨˁr	SURF-hit1	kíˁwɨˁχɨˁr	kiˁwɨ́ˁrχaˁra	kíˁwɨˁχaˁs	kíˁwɨˁχaˁ	kˁimárwˁɨχ ~ kˁimáwrˁɨχ
+v64		kíwɨq’ɨr	SURF-come	kíwɨq’ɨr	kiwírq’ara	kiwíq’as	kíwiq’a	kimérwiq’
+v65		kiwirxara ~ kiwírxɨra (IPFV)	PV-beg	NO DATA	kiwirxara ~ kiwírxɨra	kiwirxas	kiwirxa	kimewrix
+v66		kiʁípxur ~ keʁípxur	SURF-OUT-fall	kiʁípxur ~ keʁípxur	kiʁwirxura ~ keʁwipxura	kiʁipxus ~ keʁibxus	kiʁípxʷa ~ keʁibxʷa	kiʁmewrɨx ~ keʁmewrux
+v67		kiwčʼur	SURF-move	kiwčʼur	kiwčʼura	küwčʼusɨ	kíwičʼa kíwič | kíjič | kíwičʼawa	kümewürčʼ . kimebč’ к человеку kümewič kimewič
+v68		kiwčir	SURF-hold	kiwčir	kipčira	kiwčes	kiwča ~ kiwč	kimewič
+v69		kiwikɨr	PV-be_similar	kiwikɨr	kiwirkara	kiwikas	kiwika	kimewrik
+v70		kiwir	SURF-let	kiwir	kiwiχara ~ kiwχara	kiwis	kiwij ~ kiwija	kimawɨχ
+v71		kiwɨr	SURF-give	kiwɨr	kiwɨlcʼara	kiwɨs	kiwija	kimowlɨcʼ
+v72		kiwɨχɨr	hang	kiwɨχɨr	kiwɨrχara	kiwɨχas	kiwɨχa	kimelwɨx
+v73		kiwxir	SURF-put	kiwxir	kiwilxera	kiwxis	kiwxe	kimewrix
+v74		kiˁwχɨˁr	SURF-hit2	kiˁwχɨˁr	kiˁwɨˁrχara	kiˁwχɨˁs	kiˁwχ	kimaˁrwɨˁχ
+v75		kʲaʁwɨʔɨr	SURF-OUT-do	kʲaʁwɨʔɨr	kʲaʁwaʔara	kʲaʁwaʔas	kʲaʁwaʔ	kʲaʁmawaʔ
+v76		kʲaʁowʁur	waste	kʲaʁowʁur	kʲaʁʷabʁura ~ kʲaʁʷobʁura	kʲoʁowʁus	kʲaʁowʁa	kaʁmabʁ
+v77		kʲeqliwir	SURF-RE-OUT-let	kʲeqliwir	kʲaqlɨwɨχara	kʲeqliwis	kʲeqliwi	kʲaqlamawɨχ
+v78		kʲoʁubqʼura	PV-tear_off	kʲoʁubqʼura	kʲoʁwulqʼara	kʲoʁubqʼas	kʲoʁubqʼa	kʲoʁmowlɨqʼ
+v79		lačʼipχɨr	slip	lačʼipχɨr	lačʼwilχara	lačʼipχas	lacʼipχa	lačʼmelʲwiχ
+v80		labtʼur	PV-finish	labtʼur	lawurtʼura	lapʼtʼus	laptʼa	lamalwutʼ
+v81		lawɨr	UP-do	lawɨr	lawara	lawas	lawaʔ ~ lawa	lamawaʔ ~ lamawaʔa
+v82		lawɨrkɨr ~ lawkɨr ~ lówkɨr	PV-turn_around1	lawɨrkɨr ~ lawkɨr ~ lówkɨr	lawɨrkara ~ lowɨrkara	lawɨrkas ~ lówkas	lawɨrka	lamawrɨk
+v83		láwɨrsɨr	PV-boil	láwɨrsɨr	láwɨrsara	láwɨrsas	Iáwɨrsa	lamówɨrs ~ lamówrɨs
+v84		lawkɨr ~ lówkɨr	PV-turn_around2	lawkɨr ~ lówkɨr	lówɨrkɨra	lápkas ~ lówkas	lówɨrka	lamówɨrk
+v85		léwɨχɨˁr	PV-plow	léwɨχɨˁr	léwɨrχaˁra	léwɨχaˁsɨ	léwχaˁ	lamáwrɨˁχ
+v86		lépʼir	UP-pull	lépʼir	léwilera	lépʼes	lépʼe	leméwli
+v87		lewigɨr ~ lewɨgɨr	PV-sew	lewigɨr ~ lewɨgɨr	léwirgara	léwirgas	léwiga	leméwrɨg
+v88		léwčʼur	UP-move	léwčʼur	lébčʼura ~ lʲoˁwʁura	léwčʼus	léwičʼa	laˁmaˁwuʁʷ ~ lemewrüčʼ
+v89		léwir	UP-let	léwir	lówχara	léwis	léwija	lamáwɨχ
+v90		léwiqʼɨr	UP-reach	léwiqʼɨr	léwirqʼara	léwiqʼas	léwɨqʼa	leméwriqʼ
+v91		léwšur	PV-take	léwšur	lépčura	léwšus	léwiša ~ léwša	lemebčʷ ~ lemebč
+v92		lípxur	UP-fall	lípxur	líwirxura	lípxus	lípxʷa	limépxʷ
+v93		liwšír	reap	liwšír	šiwílšera	šílšesɨ	šiwílše	šiméwliš
+v94		lípq’ɨra	PV-ferment	lípq’ɨra	líwirq’ara ~ líwilqʼara	lípq’as	lípq’a	liméwriq’
+v95		liwír	eat	liwír	wiʔílera	wiʔíles	wiʔíle	méwliʔ
+v96		líwkʼur	PV-burn_light	líwkʼur	líwirkʼʷara	líwikʼʷas	líwkʼʷa	liméwrikʼʷ ~ limérwukʼ
+v97		líwxir	UP-put	líwxir	líwilxera ~ líwirxera	líwxis	líwxʲa	liméwrixʲ ~ limérwixʲ
+v98		lɨwxɨ́r	graze	lɨwxɨ́r	wɨ́xara	wɨ́xas	wɨ́xa	máwlɨx ~ málwɨx
+v99		lówcʼur	UP-fill	lówcʼur	lówɨrcʼɨra	lówcʼas ~ lówcʼus	lówcʼa	lomórwicʼ
+v100		lówčir	UP-hold	lówčir	láwɨrčira ~ lápčira ~ lówɨlčera	lówčis	lówče	lamápč
+v101		lówɢur	UP-look	lówɢur	lówɨrɢara	lówɢas	lówɢa	lomówrɨɢ
+v102		lóˁwʁur	UP-shift	lóˁwʁur	NO DATA	lečʼus	NO DATA	NO DATA
+v103		lúptʼur	PV-wake_up	lúptʼur	luwúrtʼara	lúptʼas	lúptʼa	lumówrutʼ
+v104		luʁúr (4)	rain.v	luʁúr (4)	huʁára (4)	húʁas (4)	húʁa (4)	máluʁ (4)
+v105		lúwkur	PV-lay_down	lúwkur	luwúrkara	lúwkas	lúwka	lumowruk ~ lumáwluk
+v106		lúwzur	stand1	lúwzur	luwuzara ~ lúwzara	lúwzas	lúwza	lumáwuz ~ lumárwuz
+v107		méwič’ (PROH)	go_proh	NO FORM	NO FORM	NO FORM	NO FORM	méwič’
+v108		oqúwgur	PV-RE-find	oqúwgur	eqwírgara	oqúwgas	oqúwga	oqmólwug
+v109		ówcʼur	INSIDE-fill	ówcʼur	awrácʼɨra ~ ówɨrcʼara	ówcʼus	ówcʼa	amówrɨcʼ
+v110		waqʼálqʼɨr	tremble	waqʼálqʼɨr	waqʼálqʼara	waqʼálqʼas	waqʼálqʼa	máwɨlqʼ
+v111		q’úˁbk’ir	bend	q’úˁbk’ir	кьуӀврикӀера	кьу́ӀбкӀис	кьу́ӀбкӀе	кьуӀме́вликӀ
+v112		qábӡ̌ir	PV-take_off	qábӡ̌ir	qawráӡ̌era	qábӡ̌es	qábӡ̌e	qamáwɨlӡ̌ ~ хъамо́вридж
+v113		qábgɨr	PV-stay_behind	qábgɨr	qawɨ́lgara ~ хъа́врАгара	qábgas	qábga	qamáwlɨg
+v114		qápxɨr	PV-sweep	qápxɨr	qawráxara	qápxas	qápxa	qamáwrɨx
+v115		qápχɨˁr	RE-leave	qápχɨˁr	quˁwʁúˁra	quwʁúˁs	хъуӀвры́гъ	хъуӀмо́вуӀгъ
+v116		qawásɨr	PV-listen	qawásɨr	qawásara	qawásas	qawássa	qamáwɨrs
+v117		qawácʼɨr	RE-know	qawácʼɨr	хъава́цӀара	qawácʼɨs	хъава́цӀ	хъама́выцӀ
+v118		qawɨ́ʔɨr	RE-do	qawɨ́ʔɨr	qawáʔara	qawáʔas	qawáʔ	qamáwaʔ
+v119		qíbqʼɨr	RE-come	qíbqʼɨr	qiwí	qiwíqʼas	qiwíqʼa	quˁmóˁwuˁʁ
+v120		qípxur	PV-be_after	qípxur	хъи́пхьура	qípxus	хъи́пхьва	хъиме́пхь
+v121		qičíbkɨr	PV-drag	qičíbkɨr	qičwílkara	хъехъи́чипкас	хъичи́пка	хъиме́чвилк
+v122		kičíbqɨr	PV-stick2	kičíbqɨr	kičwílqara	kičípqas	kíčipqa	kičméwlɨk
+v123		qiwlír	RE-eat	qiwlír	qiwílera ~ хъивле́ра	qíwles ~ хъиви́лес	qiwilʔe ~ хъиви́ле	qiméwliʔ
+v124		qɨwgɨ́r	RE-fetch	qɨwgɨ́r	qɨwgára	qɨwgás	qɨwgá	qɨmáwɨlɨg ~ хъымо́выг
+v125		qɨwɨ́r	RE-give	qɨwɨ́r	qɨwɨ́lcʼara	qɨwɨ́s	qawáka	qɨmálwɨcʼ ~ хъымо́влыцӀ
+v126		qɨˁӡ̌ɨ́ˁbʁɨra	PV-wither	qɨˁӡ̌ɨ́ˁbʁɨra	qɨˁӡ̌ɨˁbʁara ~ qɨˁӡ̌wɨ́ˁʁara	qɨˁӡ̌ɨ́ˁbʁas	qɨˁӡ̌ɨ́ˁbʁa	qɨˁӡ̌ɨˁmáwˁlɨʁ
+v127		quˁwʁúˁrč’ir	PV-peel	quˁwʁúˁrč’ir	quˁwʁúˁrč’era	quˁwúˁʁč’es	quˁwʁúˁrč’e	quˁwmóˁwrič’
+v128		ráˁpχɨr	shear	ráˁpχɨr	rápχaˁra	ráˁpχas	rápχaˁ	máraˁpχ ~ ма́враӀх
+v130		rɨ́wɣɨra	bear_cub	rɨ́wɣɨra	wɨɣɨ́rɣara	wɨɣɨ́rɣas	wɨɣɨ́rga	máwɨrɨɣ
+v131		rɨwkʼɨr ~ wɨkʼɨrkʼɨr	spin	rɨwkʼɨr ~ wɨkʼɨrkʼɨr	wɨkʼɨrkʼara	wɨkʼɨrkʼas	wɨkʼɨrkʼa	mawrɨk’
+v132		rɨwχɨra	knit	rɨwχɨra	wɨχɨrχara	wɨχɨrχas	wɨχɨrχa	máwɨrχ
+v133		rúpxur	shake	rúpxur	rupxara	rupxas	rupxa	marub
+v134		ruwʁúr	turn	ruwʁúr	wuʁúrʁara	wuʁurʁas	wuʁúrʁa	mawɨʁx
+v135		ʁabgɨr	OUT-stay	ʁabgɨr	ʁawɨrgar	ʁábgas	ʁábga	ʁamawrɨl
+v136		ʁáčutqur (4)	PV-comb	ʁáčutqur (4)	ʁač’utqara ~ ʁáč’ulqara (4)	ʁáč’utqas (4)	ʁáč’utqa (4)	ʁačmalüq (4)
+v137		ʁaˁwχɨˁr	PV-smear	ʁaˁwχɨˁr	ʁaˁwχɨˁra	ʁaˁwχɨˁs	ʁaˁwχɨˁ	ʁaˁmawχ
+v138		ʁewqʼɨr	PV-be_enough	ʁewqʼɨr	ʁewirq’ara	ʁewqʼas	ʁewqʼa	ʁemewrɨqʼ
+v139		ʁeqewčʼur	OUT-RE-move	ʁeqewčʼur	ʁeqebčʼura	ʁeqewčʼus	ʁeqéwičʼ	ʁeqmewüč’ ~ ʁeqmebčʼ ~ ʁaqmoˁwuˁʁ
+v140		ʁewčʼur	OUT-move	ʁewčʼur	ʁebčʼura	ʁewčʼus	ʁéwičʼ	ʁemewüč’ ~ ʁeméwičʼ ~ ʁemebč ~ ʁamaˁbʁ
+v141		ʁewir	OUT-let	ʁewir	ʁawɨχara	ʁewis	ʁewijа ~ ʁewij	ʁamáwɨx
+v142		ʁewurkur	PV-yell	ʁewurkur	ʁewurkara	ʁewurkas	ʁewúrka	ʁemewurk ~ ʁemewruk
+v143		ʁíxir (4)	PV-beat	ʁíxir (4)	ʁilxera (4)	ʁiwxis	ʁixʲa (4)	ʁemelixʲ (4)
+v144		ʁowgur	PV-see	ʁowgur	ʁowubgura	ʁowgus ~ ʁowgas	ʁowga	ʁamowrug ~ ʁomowrug
+v145		ʁawɨrsɨr	PV-be_burnt	ʁawɨrsɨr	ʁawɨrsara	ʁowɨrsas ~ ʁawɨrsas	ʁawɨrsa	ʁamawɨrs ~ ʁamawrɨs
+v146		ʁowʁur	OUT-shift	ʁowʁur	ʁabʁura	ʁowʁus	ʁowʁa	ʁamabʁа
+v147		sabtʼur	DOWN-cut	sabtʼur	sawurtʼura ~ sawratʼura	sabtʼus	sabtʼʷa	samawrutʼ
+v148		sapqɨˁr	PV-die_away	sapqɨˁr	sawraˁqaˁra	saˁpqˁas	saˁpqaˁ	saˁmawrɨq
+v149		saptɨr	PV-leave	saptɨr	sowɨltara	saptas	sapta	samowlɨt
+v150		saq’apqɨˁr	PV-extinguish	saq’apqɨˁr	saq’ʷraˁqaˁra	saˁq’apqˁas	saˁq’apqaˁ	saˁq’mawrɨq
+v151		sawark’ur	PV-hew	sawark’ur	sawark’ʷur a	sawark’ʷas	sawark’ʷa	samawrɨk
+v152		sawɨr	DOWN-do	sawɨr	sáwara	sawas	sáwaʔ	samawaʔ
+v153		sewir	DOWN-let1	sewir	sewaχara ~ sewχara	sewis	sewi	semewi
+v154		sepχɨr	slice.v	sepχɨr	sewreχara	sepχas	sepχa	semewriχ
+v155		seqíp’ir	DOWN-RE-pull	seqíp’ir	seqwílera	seqípʼes	seqípʼe	seqméwliʔ
+v156		sewčʼur	DOWN-move	sewčʼur	séwibčʼura	séwčʼus	séwičʼá ~ séwičʼ	seméwürčʼ ~ semépčʼ
+v157		séwir	DOWN-let2	séwir	sɨ́wχara	séwis	séwij ~ sewijaʔ	samawɨχ
+v158		séwšur	PV-scold	séwšur	sewibšura ~ sewibčura	sewšus	sewša	semewübš
+v159		sipkɨr	PV-saw	sipkɨr	siwríkara ~ siwírkara ~ siwiĺkara ~ sípkara	sipkas	sipka	simewrik ~ simewlik ~ simewɨrk
+v160		siwčíra	PV-rot	siwčíra	siwilčera ~ siwírčera	síwčes	siwčé	siméwrič
+v161		siwɣɨr	be_hot	siwɣɨr	siwirɣara	síwǧas	NO DATA	NO DATA
+v162		siwígɨr	PV-send	siwígɨr	siwírgara	siwígas	siwíga	simérwig
+v163		siwʁír	PV-freeze	siwʁír	siwírʁera	siwʁés	siwʁé	siméwirʁ
+v164		siwxir	DOWN-put	siwxir	siwilxera	siwxis	siwxe	simewrixʲ
+v165		sɨwɨ́ˁrq’ɨr	PV-curdle	sɨwɨ́ˁrq’ɨr	sɨwɨ́rq’aˁra	sɨwɨ́ˁrq’aˁs	sɨwɨ́ˁrq’a	sɨmɨ́ˁwrɨq’
+v166		sɨ́wχɨˁr	DOWN-beat	sɨ́wχɨˁr	sɨwɨ́rχˁara ~ sɨwɨrχˁɨra	sɨ́wχˁas	sɨ́ˁwχa	sɨmáˁwrɨχ
+v167		sówʁur	DOWN-shift	sówʁur	sówubʁura	sówʁus	sówaʁ	somowʁub ~ samawʁub
+v168		sówχur	PV-sleep	sówχur	sowɨ́rχara	sówχas	sówχa	somówɨrχ
+v169		súbdur	PV-sieve	súbdur	súwɨrdara	súbdas	súbda	sumówlud ~ sumɨ́wɨrd
+v170		subquˁr	PV-rock_cradle	subquˁr	suwulʲqaˁra ~ suˁwɨˁrqara	súˁbqas	suˁbqaˁ	sumáˁwɨˁlq
+v171		súwkuraj	PV-head_for	súwkuraj	súwɨrkara	súwkas	súwka	sumówruk
+v172		suwgúr	PV-be_lost	suwgúr	suwúrgara	suwgás	suwgá	sumáwrug ~ sumárwuga
+v173		súwqʼur	PV-sat_down	súwqʼur	súwubqʼura ~ súwurqʼara	súwqʼas	súwqʼa	sumówurqʼ ~ sumáwruqʼ etc
+v174		tʼóˁwχuˁra	PV-swell	tʼóˁwχuˁra	tʼoˁwɨrχaˁra	tʼoˁwχas	tʼóˁwχaˁ	tʼamáˁwrɨχ
+v175		tʼúkur (4)	PV-spin	tʼúkur (4)	tʼúrukara (4)	tʼúkas (4)	tʼúka (4)	tʼumáruk (4)
+v176		t’ǘbӡ̌ura	PV-suck	t’ǘbӡ̌ura	t’üwrüӡ̌era ~ t’üwürӡ̌era	tʼǘbǯes	tʼǘbǯe	tʼümáwričʼ
+v177		t’úbq’ur	PV-burst	t’úbq’ur	t’úwulq’ara	tʼuwúpqʼas	tʼúpqʼa	tʼumárwuqʼ
+v178		úbχur	PV-sneeze	úbχur	úwurχara	úbχas	úbχa	umáwɨrχ ~ umáwruχ ~ umówruχ ~ umórwuχ
+v179		uˁwuχuˁr	PV-keep	uˁwuχuˁr	уӀву́ӀрхуӀра	уӀву́Ӏхас	уӀву́Ӏхва	уӀмо́ӀвруӀх
+v180		wácʼɨr	know	wácʼɨr	wácʼara	wác’ɨs	wácʼa	máwɨcʼ ~ mówɨcʼ
+v181		wálgɨr	talk	wálgɨr	wálgara	wálgas	wálga	mówɨlg ~ mówlɨg
+v182		qawálgɨr	RE-talk	qawálgɨr	qawálgara	qawálgas	qawálga	qamáwɨlg
+v183		waráˁʁɨˁr	drink	waráˁʁɨˁr	waráˁʁaˁra	waráˁʁaˁs	waráˁʁ	móˁwraˁʁ
+v184		wáˁʁɨr	ask_for	wáˁʁɨr	wáˁʁara	wáˁʁas	wáˁʁa	mówáˁʁ
+v185		wáˁχwarkɨr	crawl	wáˁχwarkɨr	wáˁχwarkara	wáˁχwarkas	wáˁχwarka	máˁχmaˁwrɨk
+v186		wáχɨr	run	wáχɨr	wáχara	wáχas	wáχa	mówaχ ~ máwaχ
+v187		wáχɨr	break	wáχɨr	wáχara	wáχas	wáχa	máwaχ ~ mówaχ
+v188		wéddɨr	be_ill	wéddɨr	wéddara	wéddas	wédda	méwed
+v189		weggir	copulate	weggir	weggera	wegges	wegge	meweg
+v190		weréχir	deceive1	weréχir	weréχera	weréχes	weréχe	méwreχ
+v191		wéšir	cry	wéšir	wéšera	wéšes	wéše	méweš
+v192		wétɨr	kick	wétɨr	wétara	wétas	wéta	méwet
+v193		wézɨr	milk	wézɨr	wézara	wézas	wéza	méwez
+v194		wiӡ̌ír	roast	wiӡ̌ír	wiǯírǯera ~ wiӡ̌éra	wiǯés	wiǯé ~ wiǯirǯé	méwiǯ
+v195		wičʼír	manage	wičʼír	wičʼéra	wičʼés	wíčʼe	míjičʼ
+v196		wicʼɨ́r	melt	wicʼɨ́r	wic’ára	wic’ás	wicʼá	méwicʼ
+v197		wíjir	shoot	wíjir	wɨ́χara	wíjis	wíja	máwɨχ
+v198		wiqʼír	die	wiqʼír	wíqʼera	wíq’es	wiqʼe ~ wiqʼ	méwiqʼ
+v199		wiríčʼir	crush	wiríčʼir	wiríčʼera	wiríčʼes	wiríčʼe	méwričʼ
+v200		wírxɨr	walk	wírxɨr	wírxara	wírxas	wírxa	méwɨrx ~ méwrixʲ
+v201		wírzɨr	praise	wírzɨr	wírzara	wírzas	wírza	méwirz
+v202		wišír	become.PFV	wišír	NA	wɨ́kɨs	wiš	máˁwuˁʁ ~ méwiš
+v203		wisɨ́r	roast_grain	wisɨ́r	wisára ~ wɨsɨ́rsara	wisás	wisá	méwis
+v204		wiʔi (IPFV)	go	NO FORM	wiʔi	wurúʔus	wɨ́rɨx	máˁwuˁʁ
+v205		wiχír	carry	wiχír	wíχera	wíχes	wíχeʔ	méwiχ
+v206		wɨcʼɨ́rcʼɨr	sting	wɨcʼɨ́rcʼɨr	wɨcʼɨrcʼara	выцӀы́рцӀас	выцӀы́рцӀа	мо́врыцӀ
+v207		wɨ́gara (IPFV)	want	NO FORM	wɨ́gara	wɨ́gas	wɨ́ga	ма́выг
+v208		wɨgɨ́r	fetch	wɨgɨ́r	wɨgɨ́rgara	wɨgɨ́rgas	wɨgɨ́rga	máwɨg ~ мо́выг
+v209		wɨxɨ́r	go_to	wɨxɨ́r	NO FORM	выруъус	wɨrɨ́χa ~ выры́х	máwuʁˁ ~ моӀвугъ
+v210		wɨzɨ́rzɨr	overflow	wɨzɨ́rzɨr	wɨzɨ́rzara	вызы́рзас	вызы́рза	мо́Ӏвырз
+v211		wɨ́ʔɨr ~ howʔɨr ~ háwɨʔr	do	wɨ́ʔɨr ~ howʔɨr ~ háwɨʔr	wáʔara	wáʔas	waʔ(a)	máwaʔ
+v212		wucʼúr	tear_off	wucʼúr	wucʼára	вуцӀа́с	вуцӀа́	мо́выцӀ
+v213		wúlqur	play	wúlqur	wúlqara	wúlqas	wúlqa	máwulq ~ мо́влухъ
+v214		wurúʔura (IPFV)	become.IPFV	NO FORM	wurúʔura	wurúʔus ~ вы́кыс	wiš	máˁwuˁʁ
+v215		wurúˁχuˁr	mill.v	wurúˁχuˁr	wurúˁχara	wurúˁχas	wurúˁχa	máˁwrúˁχ
+v216		wúxur	cook	wúxur	wúrxʷara	ву́хьвас	wúxa ~ ву́хьва	mówrux ~ ма́врух
+v217		wuxúr	say	wuxúr	wuruxar	huxús (4)	йихьʼа́ (4)	ма́рухь (4)
+v218		wuχúr	bore	wuχúr	wúχara	ву́хас	wúχa	ма́вух
+v219		χáčʼipχɨr	PV-throw	χáčʼipχɨr	χáčʼwilχara	χáčʼipχas	χáčʼipχa	χáčʼmelwiχ ~ χáčʼmewlɨχ
+v220		χówq’ur	PV-grab	χówq’ur	χówq’ura	χówq’as	χówq’	χomówrɨq’
+v221		χeʁéwšur	PV-seize	χeʁéwšur	χeʁébčura	χeʁéwšus	χeʁéwš	χeʁmébč
+v222		χeʁípʼir	PV-harvest_honey	χeʁípʼir	χeʁwílera	χeʁípʼes	χeʁípʼe	χeʁméwlipʼ
+v223		χéwir	PV-rest	χéwir	χówχara	χéwis	χéwi	χomówɨχ
+v224		χíbgɨr	PV-rock	χíbgɨr	χíwilgara	χíbgasɨ	χíbga	χiméwlig
+v225		χɨˁʁɨ́wχɨr	PV-stand	χɨˁʁɨ́wχɨr	χɨˁʁwɨ́rχara	χɨˁʁɨ́wχɨs	χɨˁʁɨ́wχa	χɨˁʁmáwrɨχ ~ χɨˁʁmówrɨχ
+v226		χówqʼur	PV-catch	χówqʼur	χówurqʼara ~ χówɨrqʼara	χówqʼas	χówqʼa	χomówrɨqʼ
+v227		χówʁur	ASIDE-shift	χówʁur	χábʁura	χówʁus	χówʁa	χamábʁ
+v228		χúpkur	ask	χúpkur	χúwulkara	χúpkas	χúbka	χumówluk
+v229		luwqúr	PV-be_whipping	luwqúr	luwqára	luwqás	luwqá	lumowlɨ́q
+v230		wuruʔura (IPFV)	be_able.ipfv	NO FORM	wuruʔura	NO FORM	NO FORM	NO FORM
+v231		čawáqur	PV-itch	čawáqur	čawáqʷara	čawáqʷas	čawáqʷa	čamáwruq

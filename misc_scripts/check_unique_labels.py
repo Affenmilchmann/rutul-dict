@@ -15,9 +15,9 @@ def check_unique_labels():
             data = dict(zip(cols, row))
             if data['Glossing label'] in labels:
                 dublicates.append({
-                    data['Glossing label']: [labels['Glossing label'], 
+                    data['Glossing label']: [labels[data['Glossing label']], 
                                              data['lexeme_id']]
                 })
             else:
-                labels['Glossing label'] = data['lexeme_id']
+                labels[data['Glossing label']] = data['lexeme_id']
     return dublicates
