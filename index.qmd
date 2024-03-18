@@ -3,10 +3,6 @@ title: "Dictionary of Kina Rutul"
 format: 
   html:
     page-layout: full
-editor: source
-css: styles.css
-editor_options: 
-  chunk_output_type: console
 ---
 
 ```{r}
@@ -14,7 +10,7 @@ editor_options:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text. 
+Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text. 
 
 Please refer to the dictionary as follows:
 
@@ -46,24 +42,3 @@ print(article_citation, .opts = list(style = 'Bibtex'))
 ```
 
 :::
-
-```{r}
-#| echo: false
-#| warning: false
-
-library(tidyverse)
-library(DT)
-library(glue)
-
-data<-read_tsv("./data/rutul_dict.tsv", show_col_types = FALSE)
-names(data)<-make.names(names(data))
-
-mutate(data, 
-       href = glue('<a href="words/{gsub(", ","-",Glossing.label)}.html">{Glossing.label}</a>')) %>% 
-  select(href, meaning_1_rus, meaning_1, Orthography, Lexical.entry, Part.of.Speech) %>% 
-  datatable(filter = 'top', escape = FALSE, rownames = FALSE,
-            colnames = c("", "Russian", "English", "Orthography", "lemma", "pos"),
-            options = list(pageLength = 10, dom = 'top', 
-                           columnDefs = list(
-                             list(orderable = FALSE, className = 'details-control', targets = 0))))
-```

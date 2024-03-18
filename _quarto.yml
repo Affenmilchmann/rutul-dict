@@ -1,0 +1,18 @@
+project:
+  type: website
+  output-dir: .
+
+website:
+  navbar:
+    background: '#f8f9fa'
+    search: false
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "Dictionary"
+        file: dictionary.qmd
+    tools:
+      - icon: github
+        menu:
+          - text: Source Code
+            url:  https://github.com/Affenmilchmann/rutul-dict

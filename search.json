@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Dictionary of Kina Rutul",
+    "section": "",
+    "text": "Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text.\nPlease refer to the dictionary as follows:\n\nPlain textBibTeX\n\n\nMagomedgazhieva, P. and M. Daniel (2023). Dictionary of Tukita (v2.0.0). Moscow. DOI: 10.5281/zenodo.7803955. http://lingconlab.ru/TukitaDict/.\n\n\n\n\n@misc{magomedgadzhieva2023,\n  title = {Dictionary of Tukita (v2.0.0)},\n  author = {Patimat Magomedgazhieva and Michael Daniel},\n  year = {2023},\n  publisher = {Linguistic Convergence Laboratory, NRU HSE},\n  address = {Moscow},\n  url = {http://lingconlab.ru/TukitaDict/},\n  doi = {10.5281/zenodo.7803955},\n}"
+  },
+  {
+    "objectID": "dictionary.html",
+    "href": "dictionary.html",
+    "title": "Dictionary of Kina Rutul",
+    "section": "",
+    "text": "Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text."
+  }
+]

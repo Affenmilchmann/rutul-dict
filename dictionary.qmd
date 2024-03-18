@@ -1,0 +1,58 @@
+---
+title: "Dictionary of Kina Rutul"
+format: 
+  html:
+    page-layout: full
+editor: source
+css: styles.css
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| include: false
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text. 
+
+```{r}
+#| echo: false
+#| warning: false
+
+library(tidyverse)
+library(DT)
+library(glue)
+
+li_if_not_empty <- function(val) {
+  if (length(is.na(val)) > 1) return (toString(val));
+  if (is.na(val)) {return ('')}
+  else {return (glue('<li>{val}</li>'))}
+}
+
+data<-read_tsv("./data/rutul_dict.tsv", show_col_types = FALSE)
+names(data)<-make.names(names(data))
+
+mutate(data, 
+       href = glue('<a href="words/{gsub(", ","-",Glossing.label)}.html">{Glossing.label}</a>')) %>% 
+  mutate(meanings_rus = gsub("<li>NA</li>", "", 
+                              glue('<ol>
+                                      <li>{meaning_1_rus}</li>
+                                      <li>{meaning_2_rus}</li>
+                                      <li>{meaning_3_rus}</li>
+                                      <li>{meaning_4_rus}</li>
+                                    </ol>'))) %>%
+  mutate(meanings = gsub("<li>NA</li>", "", 
+                          glue('<ol>
+                                  <li>{meaning_1}</li>
+                                  <li>{meaning_2}</li>
+                                  <li>{meaning_3}</li>
+                                  <li>{meaning_4}</li>
+                                </ol>'))) %>%
+  select(href, meanings_rus, meanings, Orthography, No.stress, Part.of.Speech) %>% 
+  datatable(filter = 'top', escape = FALSE, rownames = FALSE,
+            colnames = c("Glossing Label", "Russian", "English", "Orthography", "Lemma", "pos"),
+            options = list(pageLength = 10, dom = 'top', 
+                           columnDefs = list(
+                             list(orderable = FALSE, className = 'details-control', targets = 0))))
+```
