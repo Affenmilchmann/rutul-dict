@@ -1,32 +1,32 @@
-# Rutul dictionary static website generator
+# Генератор статичного html словаря Рутульского языка
 
-This code consists of:
-- two R Quarto scripts: [index.qmd](index.qmd) and [dictionary.qmd](dictionary.qmd)  
-They generate
-    - a frontpage (/index.html)
-    - a dictionary page (/dictionary.html)
-- Python script: [generate.py](generate.py)  
-It generates all individual word pages (/words/*)
+Код состоит из:
+- двух скриптов R Quarto=: [index.qmd](index.qmd) и [dictionary.qmd](dictionary.qmd)  
+Они генерируют
+    - главную страницу (/index.html)
+    - страницу словаря со списком слов (/dictionary.html)
+- Python скрипт: [generate.py](generate.py)  
+Генерирует все индивидуальные страницы слов (/words/*)
 
-Both R and Python scripts take word data from [data/rutul_dict.tsv](data/rutul_dict.tsv). And inflectional data from [infl_adj.tsv](data/infl_adj.tsv), [data/infl_noun.tsv](data/infl_noun.tsv) and [infl_verb.tsv](data/infl_verb.tsv)
+И скрипты R и скирпт Python читают данные из [data/rutul_dict.tsv](data/rutul_dict.tsv). И словоизменительные данные из [data/infl_adj.tsv](data/infl_adj.tsv), [data/infl_noun.tsv](data/infl_noun.tsv) и [data/infl_verb.tsv](data/infl_verb.tsv)
 
-## How to edit the dictionary
-1. Edit data you need in data/*.tsv files.
-2. Generate website
+## Как редактировать словарь и статический сайт
+1. Внесите необходимые изменения в исходные файлы data/*.tsv.
+2. Сгенерируйте статичный сайт
     - R:
-        1. Open RStudio
-        2. Install Quarto and dependencies
-        3. Run generation on both [index.qmd](index.qmd) and [dictionary.qmd](dictionary.qmd) individually
+        1. Откройте RStudio
+        2. Установите Quarto и зависимости для [dictionary.qmd](dictionary.qmd)
+        3. Запустите генерацию [index.qmd](index.qmd) и [dictionary.qmd](dictionary.qmd)
     - python:
-        1. (optional) activate virtual enviroment
-        2. Install dependencies:   
+        1. (опционально) создайне виртуальное окружение
+        2. Установите зависимости:   
         `pip install -r requirements.txt`  
-        or  
+        или  
         `pip3 install -r requirements.txt`
-        3. Run generation script:  
+        3. Запустите скрипт:  
         `python3 generate.py`  
 
-Authors: Ася Алексеева, Иван Осоргин
+Авторы: Ася Алексеева, Иван Осоргин
 
-- Ася Алексеева: *.tsv data
-- Иван Осоргин: R and Python scripts
+- Ася Алексеева: создание и обработка *.tsv таблиц словаря
+- Иван Осоргин: скрипты генерации R и Python
