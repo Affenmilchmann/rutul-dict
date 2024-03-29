@@ -16,7 +16,9 @@ This dictionary was collected during the fieldwork in 2016-2023 of Linguistic co
 
 The dictionary contains 1256 lexical entries of different parts of speech (nouns, verbs, etc.), list of meanings collected for these entries, exemplifying sentences and also some morphological information.
 
-#### [Browse the dictionary](./dictionary.html)
+<button onclick="window.location.href='./dictionary.html';" style="color: #094fb6; background-color: #f8f9fa; border-radius: 4px; border: 2px solid lightgray; font-size: 20px; padding: 8px;">
+  Browse the dictionary
+</button>
 
 
 ## How to cite
