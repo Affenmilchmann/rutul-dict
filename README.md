@@ -27,3 +27,6 @@ Both R and Python scripts take word data from [data/rutul_dict.tsv](data/rutul_d
         `python3 generate.py`  
 
 Authors: Ася Алексеева, Иван Осоргин
+
+- Ася Алексеева: *.tsv data
+- Иван Осоргин: R and Python scripts
