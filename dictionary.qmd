@@ -47,7 +47,7 @@ data<-read_tsv("./data/rutul_dict.tsv", show_col_types = FALSE)
 names(data)<-make.names(names(data))
 
 mutate(data, 
-       href = glue('<a href="words/{gsub(", ","-",lexeme_id)}.html">{lexeme_id}</a>')) %>% 
+       href = glue('<a href="words/{gsub(", ","-",lexeme_id)}.html">{Glossing.label}</a>')) %>% 
   mutate(meanings_rus = gsub("<li>NA</li>", "", 
                               glue('<ol>
                                       <li>{meaning_1_rus}</li>
