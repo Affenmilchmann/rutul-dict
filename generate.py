@@ -148,16 +148,16 @@ def insert_inflection(data: dict, inflection_data: dict) -> None:
     else:
         data['inflection_data'] = None
 
-met_glossing_labels = set()
-def check_glossing_label(label: str) -> None:
-    """Check glossing label if it
+page_names = set()
+def check_page_name(label: str) -> None:
+    """Checkpage name if it
     
     1) has the right format
 
     2) is unique
 
     Args:
-        label (str): glossing label
+        label (str): page name
 
     Raises:
         ValueError: format is incorrect
@@ -165,12 +165,12 @@ def check_glossing_label(label: str) -> None:
     """
     chars = "[a-zA-Z0-9_\-'.]"
     if not re.match(f'^{chars}+(?:, )?{chars}*$', label):
-        raise ValueError(f"Invalid format of glossing label: '{label}'")
-    if label in met_glossing_labels:
+        raise ValueError(f"Invalid format of page name: '{label}'")
+    if label in page_names:
         raise ValueError(
-            f"Not unique glossing label: '{label}'. There is already an entry with such label"
+            f"Not unique page name: '{label}'. There is already an entry with such name"
         )
-    met_glossing_labels.add(label)
+    page_names.add(label)
 
 def main():
     template_file = 'word.html'
@@ -207,10 +207,10 @@ def main():
             insert_inflection(data, inflection_data)
             pprint(data)
 
-            check_glossing_label(data['Glossing label'])
+            check_page_name(data['lexeme_id'])
 
             out_file = out_dir.joinpath(
-                f"{data['Glossing label'].replace(', ', '-')}.html"
+                f"{data['lexeme_id'].replace(', ', '-')}.html"
             )
             generate_html(
                 data=data,
