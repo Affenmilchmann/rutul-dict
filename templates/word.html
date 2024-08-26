@@ -43,6 +43,7 @@
         <!-- PAGE BODY -->
         <div class="container pt-3" style="padding-bottom: 50;">
             <div class="small-container">
+                <!-- Lexical entry -->
                 <p class="h3">{{ data['Lexical entry'] }}</p>
                 <p>
                     <b>{{ data['Part of Speech'] }}</b>
@@ -63,6 +64,7 @@
                         </tr>
                     </table>
                 </p>
+                <!-- Meanings -->
                 <p class="h5">Meanings</p>
                 <ol class="list-group list-group-numbered">
                 {% for meaning in data['meanings'] -%}
@@ -72,7 +74,7 @@
                         <br>
                         <ul>
                         {%- for example in meaning['examples'] %}
-                            {%+ if example['rus'] != '' and example['original'] != '' %}
+                            {% if example['rus'] != '' and example['original'] != '' %}
                                 <li><i>{{ example['original'] }}</i><br>‘{{ example['rus'] }}’</li>
                             {% endif %}
                         {% endfor -%}
@@ -82,10 +84,16 @@
                 {%- endfor %}
                 </ol>
                 <br>
-                {% if data['inflection_data'] or (data['Part of Speech'] in complex_pos_list) %}
+                <!-- Comment -->
+                {% if data['comment_to_appear'] %}
+                    <p style="margin-bottom: 0;"><b>Comment:</b> {{ data['comment_to_appear'] }}</p>
+                    <br>
+                {% endif %}
+                <!-- Inflection -->
+                {% if (data['inflection_data']) or (data['Part of Speech'] in complex_pos) %}
                     <p class="h5">Inflection</p>
                 {% endif %}
-                {% if (data['Part of Speech'] in complex_pos_list) %}
+                {% if (data['Part of Speech'] in complex_pos) %}
                 <p>
                     See
                     {%if data['main_word_id']%}<a href="{{data['main_word_id']}}.html">{{data['main_word']}}</a>{%else%}{{data['main_word']}}{%endif%}

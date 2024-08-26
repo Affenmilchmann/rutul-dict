@@ -27,21 +27,22 @@ def generate_html(data: dict,
 def merge_meanings(data: dict) -> None:
     """Merges meanings in a dict.
 
-    {'meaning_1': 'a', 'meaning_2': 'b',
-     'meaning_1_rus': 'c', 'meaning_1_rus': 'd',
-     'example_1': 'e', 'example_1': 'f',
-     'example_1_rus': 'g', 'example_2_rus': 'h'б
-     'diathesis_1': 'i', 'diathesis_2': 'j'}
+    {'meaning_1': 'let in',                 'meaning_2': 'bath (child)',
+     'meaning_1_rus': 'впускать внутрь',    'meaning_2_rus': 'искупать (ребенка)',
+     'example_1': 'χala aʁʷa zɨ!',          'example_2': 'χɨnɨχ xije aʁura',
+     'example_1_cyr': 'хала агъва зы!',     'example_2_cyr': 'хыных хьийе агъура',
+     'example_1_rus': 'В дом пусти меня!',  'example_2_rus': 'Ребенка искупали',
+     'diathesis_1': 'abs',                    'diathesis_2': 'abs'}
     
     will become
 
     {'meanings': [
-        {'meaning': 'a', 'meaning_rus': 'c',
-         'example': 'e', 'example_rus': 'g',
-         'diathesis': 'i'},
-        {'meaning': 'b', 'meaning_rus': 'd',
-         'example': 'f', 'example_rus': 'h',
-         'diathesis': 'j'}
+        {'meaning': 'let in', 'meaning_rus': 'впускать внутрь',
+         'example': 'χala aʁʷa zɨ!', 'example_cyr': 'хала агъва зы!', 'example_rus': 'В дом пусти меня!',
+         'diathesis': 'abs'},
+        {'meaning': 'bath (child)', 'meaning_rus': 'искупать (ребенка)',
+         'example': 'χɨnɨχ xije aʁura', 'example_cyr': 'хыных хьийе агъура', 'example_rus': 'Ребенка искупали',
+         'diathesis': 'abs'}
     ]}
 
     Args:
@@ -53,6 +54,7 @@ def merge_meanings(data: dict) -> None:
             'meaning': data[f'meaning_{i}'],
             'meaning_rus': data[f'meaning_{i}_rus'],
             'example': data[f'example_{i}'],
+            'example_cyr': data[f'example_{i}_cyr'],
             'example_rus': data[f'example_{i}_rus'],
             'diathesis': data[f'diathesis_{i}']
         })
@@ -88,11 +90,13 @@ def split_examples(data: dict) -> None:
     for meaning in data['meanings']:
         examples = meaning['example'].split(' ; ')
         examples = [x.strip() for x in examples]
+        examples_cyr = meaning['example_cyr'].split(' ; ')
+        examples_cyr = [x.strip() for x in examples_cyr]
         examples_rus = meaning['example_rus'].split(' ; ')
         examples_rus = [x.strip() for x in examples_rus]
-        del meaning['example'], meaning['example_rus']
-        meaning['examples'] = [{'original': orig, 'rus': rus}
-                               for orig, rus in zip(examples, examples_rus)]
+        del meaning['example'], meaning['example_cyr'], meaning['example_rus']
+        meaning['examples'] = [{'original': f'{orig} / {cyr}', 'rus': rus}
+                               for orig, cyr, rus in zip(examples, examples_cyr, examples_rus)]
 
 def load_inflection(*files) -> dict:
     """Loads inflection data
@@ -205,7 +209,7 @@ def main():
             merge_meanings(data)
             split_examples(data)
             insert_inflection(data, inflection_data)
-            pprint(data)
+            if data['Part of Speech'] in complex_pos: pprint(data)
 
             check_page_name(data['lexeme_id'])
 
