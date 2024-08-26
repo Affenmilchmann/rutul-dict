@@ -18,7 +18,7 @@
     "href": "index.html#how-to-cite",
     "title": "Dictionary of Kina Rutul",
     "section": "How to cite",
-    "text": "How to cite\nPlease refer to the dictionary as follows:\n\nPlain textBibTeX\n\n\nAlekseeva, A., N. Beklemishev, M. Daniel, et al. (2024). Dictionary of Kina Rutul. Moscow. https://affenmilchmann.github.io/rutul-dict/.\n\n\n\n\n@misc{alekseevaetal2024,\n  title = {Dictionary of Kina Rutul},\n  author = {A. Alekseeva and N. Beklemishev and M. Daniel and N. Dobrushina and K. Filatov and A. Ivanova and T. Maisak and I. Osorgin},\n  year = {2024},\n  publisher = {Linguistic Convergence Laboratory, HSE University},\n  address = {Moscow},\n  url = {https://affenmilchmann.github.io/rutul-dict/},\n}"
+    "text": "How to cite\nPlease refer to the dictionary as follows:\n\nPlain textBibTeX\n\n\nAlekseeva, A., N. Beklemishev, M. Daniel, et al. (2024). Dictionary of Kina Rutul. Moscow. &lt;URL: https://affenmilchmann.github.io/rutul-dict/&gt;.\n\n\n\n\n@misc{alekseevaetal2024,\n  title = {Dictionary of Kina Rutul},\n  author = {A. Alekseeva and N. Beklemishev and M. Daniel and N. Dobrushina and K. Filatov and A. Ivanova and T. Maisak and I. Osorgin},\n  year = {2024},\n  publisher = {Linguistic Convergence Laboratory, HSE University},\n  address = {Moscow},\n  url = {https://affenmilchmann.github.io/rutul-dict/},\n}"
   },
   {
     "objectID": "dictionary.html#how-to-use",

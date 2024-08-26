@@ -72,7 +72,9 @@
                         <br>
                         <ul>
                         {%- for example in meaning['examples'] %}
-                            <li><i>{{ example['original'] }}</i><br>‘{{ example['rus'] }}’</li>
+                            {%+ if example['rus'] != '' and example['original'] != '' %}
+                                <li><i>{{ example['original'] }}</i><br>‘{{ example['rus'] }}’</li>
+                            {% endif %}
                         {% endfor -%}
                         </ul>
                     </li>
@@ -81,7 +83,7 @@
                 </ol>
                 <br>
                 {% if data['inflection_data'] or (data['Part of Speech'] in complex_pos_list) %}
-                <p class="h5">Inflection</p>
+                    <p class="h5">Inflection</p>
                 {% endif %}
                 {% if (data['Part of Speech'] in complex_pos_list) %}
                 <p>
