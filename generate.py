@@ -129,7 +129,7 @@ def load_glossing_labels(file: str) -> dict:
     with open(file, encoding='utf-8') as f:
         reader = csv.reader(f, delimiter='\t')
         col_names = next(reader)
-        for row in tqdm(reader):
+        for row in tqdm(reader, desc='Loading labels'):
             data = dict(zip(col_names, row))
             labels[data['lexeme_id']] = data['Glossing label']
     return labels
@@ -204,12 +204,12 @@ def main():
     with open(data_file, encoding='utf-8') as f:
         reader = csv.reader(f, delimiter='\t')
         col_names = next(reader)
-        for row in tqdm(reader):
+        for row in tqdm(reader, desc='Generating pages'):
             data = dict(zip(col_names, row))
             merge_meanings(data)
             split_examples(data)
             insert_inflection(data, inflection_data)
-            if data['Part of Speech'] in complex_pos: pprint(data)
+            #pprint(data)
 
             check_page_name(data['lexeme_id'])
 
