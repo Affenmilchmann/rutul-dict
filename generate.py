@@ -95,8 +95,9 @@ def split_examples(data: dict) -> None:
         examples_rus = meaning['example_rus'].split(' ; ')
         examples_rus = [x.strip() for x in examples_rus]
         del meaning['example'], meaning['example_cyr'], meaning['example_rus']
-        meaning['examples'] = [{'original': f'{orig} / {cyr}', 'rus': rus}
-                               for orig, cyr, rus in zip(examples, examples_cyr, examples_rus)]
+        meaning['examples'] = [{'original': f'{orig}', 'cyr': cyr, 'rus': rus}
+                               for orig, cyr, rus in zip(examples, examples_cyr, examples_rus)
+                               if orig or cyr or rus]
 
 def load_inflection(*files) -> dict:
     """Loads inflection data

@@ -74,8 +74,8 @@
                         <br>
                         <ul>
                         {%- for example in meaning['examples'] %}
-                            {% if example['rus'] != '' and example['original'] != '' %}
-                                <li><i>{{ example['original'] }}</i><br>‘{{ example['rus'] }}’</li>
+                            {% if example['rus'] != '' or example['cyr'] != '' or example['original'] != '' %}
+                                <li><i>{{ example['original'] }} / {{ example['cyr'] }}</i><br>‘{{ example['rus'] }}’</li>
                             {% endif %}
                         {% endfor -%}
                         </ul>
