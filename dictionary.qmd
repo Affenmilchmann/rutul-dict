@@ -64,8 +64,8 @@ mutate(data,
                                   <li>{meaning_4}</li>
                                 </ol>'))) %>%
   mutate(meanings = gsub(regex("<ol>\\s*<li>([^<>]*)<\\/li>\\s*<\\/ol>"), "\\1", meanings))  %>%
-  select(href, No.stress, Orthography, meanings_rus, meanings, Part.of.Speech, comment_to_appear) %>% 
+  select(href, No.stress, Orthography, meanings_rus, meanings, Part.of.Speech) %>% 
   datatable(filter = 'top', escape = FALSE, rownames = FALSE,
-            colnames = c("Glossing Label", "Lexical entry", "Orthography", "Russian", "English", "Part of Speech", "Comment"),
+            colnames = c("Glossing Label", "Lexical entry", "Orthography", "Russian", "English", "Part of Speech"),
             options = list(pageLength = 20, dom = 'top'))
 ```
