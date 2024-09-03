@@ -4,14 +4,18 @@ project:
 
 website:
   navbar:
-    background: '#f8f9fa'
     search: false
+    background: '#f8f9fa'
     left:
       - text: "Home"
         file: index.qmd
       - text: "Dictionary"
         file: dictionary.qmd
     tools:
+      - icon: download
+        menu:
+          - text: Download data
+            url: ./data/rutul_dict.xlsx
       - icon: github
         menu:
           - text: Source Code
