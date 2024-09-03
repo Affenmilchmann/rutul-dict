@@ -34,7 +34,7 @@ article_citation <- BibEntry(bibtype = 'misc',
  year='2024',
  publisher='Linguistic Convergence Laboratory, HSE University',
  address='Moscow',
- url='https://affenmilchmann.github.io/rutul-dict/')
+ url='https://lingconlab.github.io/kina-rutul-dict/')
 ```
 
 ::: {.panel-tabset}
