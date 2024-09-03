@@ -1,5 +1,6 @@
 from pprint import pprint
 from pathlib import Path
+from typing import Generator, List, Tuple
 import csv
 import re
 import os
@@ -8,6 +9,8 @@ from jinja2 import (Environment,
                     FileSystemLoader,
                     Template)
 from tqdm import tqdm
+import xlsxwriter
+import xlsxwriter.worksheet
 
 def generate_html(data: dict,
                   template: Template,
@@ -177,12 +180,8 @@ def check_page_name(label: str) -> None:
         )
     page_names.add(label)
 
-def main():
+def generate_pages(data_file: str, infl_files: List[str]):
     template_file = 'word.html'
-    data_file = 'data/rutul_dict.tsv'
-    infl_files = ['data/infl_adj.tsv',
-                  'data/infl_noun.tsv',
-                  'data/infl_verb.tsv']
     out_dir = 'words'
     complex_pos = {
         f'complex {pos}': f'This is a complex {pos} consisting of the words:'
@@ -225,5 +224,34 @@ def main():
                 glossing_labels=glossing_labels
             )
 
+def generate_xlsx(data_file: str, infl_files: list[str]):
+    def write_tsv_to_worksheet(
+            file: str, 
+            worksheet: xlsxwriter.worksheet.Worksheet
+        ) -> Generator[Tuple[str], None, None]:
+        with open(file, 'r', encoding='utf-8') as f:
+            reader = csv.reader(f, delimiter='\t')
+            row_num = 0
+            for row_data in reader:
+                worksheet.write_row(row=row_num, col=0, data=row_data)
+                row_num += 1
+    
+    writer = xlsxwriter.Workbook('data/rutul_dict.xlsx')
+    
+    main_worksheet = writer.add_worksheet('rutul_dict')
+    write_tsv_to_worksheet(data_file, main_worksheet)
+
+    for file in infl_files:
+        sheet_name = os.path.basename(file)
+        worksheet = writer.add_worksheet(sheet_name)
+        write_tsv_to_worksheet(file, worksheet)
+
+    writer.close()
+
 if __name__ == '__main__':
-    main()
+    data_file = 'data/rutul_dict.tsv'
+    infl_files = ['data/infl_adj.tsv',
+                  'data/infl_noun.tsv',
+                  'data/infl_verb.tsv']
+    generate_pages(data_file, infl_files)
+    generate_xlsx(data_file, infl_files)
