@@ -1,4 +1,5 @@
 # Генератор статичного html словаря Рутульского языка
+[![DOI](https://zenodo.org/badge/762231307.svg)](https://zenodo.org/doi/10.5281/zenodo.13652465)
 
 Код состоит из:
 - двух скриптов R Quarto=: [index.qmd](index.qmd) и [dictionary.qmd](dictionary.qmd)  
